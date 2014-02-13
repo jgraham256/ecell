@@ -1,0 +1,20 @@
+ecell---A basic elementary cellular automata generator
+
+Usage: ecell [[OPTION] [PARAMETER]]
+Produces elementary cellular automata.
+
+Arguments that take parameters require said parameters.  Can be run without arguments, at which point any needed parameters are set randomly.
+	-r	[RULE]		use rule specified (8-bit unsigned int)
+	-p	[POPULATION]	use initial population (32-bit unsigned int)
+	-q			"quiet mode", no command line output
+	-v			"verbose mode", prints everything and the
+					kitchen sink to the command line
+	-o	[OUTFILENAME]	prints generated populations to output file.
+	-h			prints this help and exit
+
+If both -q and -v are entered, or arguments are improperly specified, or any other kind of slip-up, throws hands in the air, prints help, and quits.
+
+TO DO:
+- Allow for arbitrary-sized initial populations (within limits)---would likely mean removing parameter-initialized populations and adding manual population specification.
+- Allow for 3-, 5-, and 7-space perspectives for cells, rather than just 3-space.
+- Read from file and print automata---would require altering how output to file is organized.
